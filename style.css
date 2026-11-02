@@ -104,6 +104,26 @@ html[lang=en] .language-button::before{content:'En'}
 .section-heading{text-align:center;margin-bottom:26px}
 .section-intro{color:var(--muted);margin-top:8px}
 
+/* Live sites: badge + host pill, text beside a thumbnail, stack and a navy visit button */
+.live-list{display:grid;gap:16px}
+.live-card{display:grid;gap:14px;padding:22px;background:var(--paper);border:1px solid var(--line);border-radius:var(--card-radius);transition:border-color .18s,box-shadow .18s}
+.live-card:hover{border-color:#cfd5e1;box-shadow:0 10px 30px rgba(15,23,42,.06)}
+.live-top{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.live-badge{font-size:14px;font-weight:600;color:var(--navy);background:var(--badge);border-radius:var(--pill);padding:6px 16px}
+.live-host{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;color:var(--navy);border:1.5px solid var(--teal);border-radius:var(--pill);padding:5px 16px;direction:ltr}
+.live-dot{width:7px;height:7px;border-radius:50%;background:var(--teal);box-shadow:0 0 0 3px var(--teal-soft)}
+.live-body{display:flex;align-items:center;gap:16px}
+.live-text{flex:1;min-width:0}
+.live-text h3{font-size:20px;line-height:1.45}
+.live-text p{color:var(--muted);font-size:15px;margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.live-thumb{flex-shrink:0;width:128px;height:96px;object-fit:cover;object-position:top;border-radius:16px;border:1px solid var(--line);background:var(--canvas)}
+.live-foot{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.live-stack{font-weight:600;font-size:15px;direction:ltr}
+.live-visit{display:inline-flex;align-items:center;gap:14px;min-height:50px;padding:10px 26px;border-radius:var(--pill);background:var(--navy);color:#fff;font-weight:600;font-size:15px;transition:background .18s}
+.live-visit:hover{background:var(--navy-hover)}
+.live-visit>span:last-child{font-size:22px;line-height:1}
+html[dir=rtl] .live-visit>span:last-child{transform:scaleX(-1)}
+
 /* Work: case studies as cards */
 .featured-project,.integration-row{background:var(--paper);border:1px solid var(--line);border-radius:var(--card-radius);padding:26px}
 .featured-project{display:grid;gap:22px}
@@ -224,7 +244,10 @@ html[dir=rtl] .repo-stack{flex-direction:row-reverse}
   .wordmark small{display:none}
   .integration-row{grid-template-columns:1fr auto}
   .integration-icon{display:none}
-  .featured-project,.integration-row,.repo,.skill-panels [role=tabpanel],.journey-entry{padding:20px}
+  .featured-project,.integration-row,.repo,.skill-panels [role=tabpanel],.journey-entry,.live-card{padding:20px}
+  .live-thumb{width:96px;height:80px}
+  .live-text h3{font-size:18px}
+  .live-visit{padding-inline:20px}
   .lifecycle{gap:4px}
   .lifecycle div{font-size:12px}
   .flow-line{display:none}

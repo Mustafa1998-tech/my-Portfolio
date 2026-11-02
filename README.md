@@ -19,6 +19,7 @@ Open http://localhost:8000. Clipboard copying requires HTTPS or localhost and ha
 - `index.html`: bilingual content, ten original project links and high-level case studies.
 - `style.css`: responsive layout, design tokens, focus and reduced-motion styles.
 - `script.js`: language preference, project filtering, tabs, mobile navigation, dialogs and email copying.
+- `assets/live/`: small WebP previews for the live-sites section (deployed Vercel projects).
 - `assets/fonts/`: self-hosted IBM Plex Sans Arabic and its OFL license.
 - `profile.jpg` and `Mustafa_CV_Updated_*.pdf`: the original photo and CVs, preserved unchanged.
 
